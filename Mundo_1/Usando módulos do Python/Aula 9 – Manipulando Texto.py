@@ -1,0 +1,27 @@
+frase = "  Olá mundo  "
+
+print("\n" * 5)
+print(f"frase         = {frase}\n\n")
+print(f"frase[4:13]   = {frase[4:13]}")
+print(f"frase[0:13:2] = {frase[0:13:2]}")
+print(f"frase[:7]     = {frase[:7]}")
+print(f"frase[7:]     = {frase[7:]}")
+print(f"frase[5::2]   = {frase[5::2]}")
+
+print("\n\nAnalisando a frase")
+print(f"len = {len(frase)}")
+print(f"count(`o`)  = {frase.count('o')}")
+print(f"find(`o`)   = {frase.find('o')}")
+
+print("\n\nTransformando a frase")
+print(f"replace    = {frase.replace('mundo', 'Marcus')}")
+print(f"upper      = {frase.upper()}")
+print(f"lower      = {frase.lower()}")
+print(f"capitalize = {frase.capitalize()}")
+print(f"title      = {frase.title()}")
+print(f"strip      = {frase.strip()}")
+print(f"rstrip     = strip lado direito")
+print(f"lstrip     = strip lado esquerdo")
+print(f"split      = {frase.split()}")
+print(f"'-'.join   = {'-'.join(frase.split())}")
+print("\n" * 5)
