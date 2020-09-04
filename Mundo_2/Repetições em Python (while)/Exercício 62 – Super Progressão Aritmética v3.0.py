@@ -7,7 +7,7 @@ print("\n" * 10 + "Progressão Aritmética")
 
 q = 10
 n = int(input("Digite o 1° número : "))
-r = int(inpuDigitet(" a razão da PA : "))
+r = int(input("Digite a razão da PA : "))
 s = n + ( r * q )
 c = 0
 
