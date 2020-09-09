@@ -6,22 +6,14 @@ C) Se o valor 5 foi digitado e está ou não na lista.
 
 """
 
-from random import randint
+valores = []
 
-lista = []
-b = []
-continuar = ""
-
-while continuar == "s":
-    n = int(input("Digite um numero : "))
-    lista.append(n)
-    continuar = str(input("Você deseja continuar : ")).lower[0]
-
-print(f"Você digitou {len(lista)} números")
-b = []
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for c in range(10, 0, -1):
-    b.append(lista[c])
-    print(f"VAlor {lista[c]} adcionado")
-print(f"Lista de valores em ordem decrescente {b}")
-    
+while True:
+    valores.append(int(input('Digite um Valor : ')))
+    if input('Continuar : ') in "Nn":
+        break
+valores.sort(reverse=True)
+print(f"Você digitou {len(valores)} elementos")
+print(f"Os valores em ordem decrescente são {valores}")
+if 5 in valores:
+    print("O valor cinco está na lista")
